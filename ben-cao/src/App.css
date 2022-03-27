@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  font-family: "WenYueMingChaoTi";
+}
+
+body {
+  font-family: "WenYueMingChaoTi";
+}
+
+@font-face {
+    font-family: WenYueMingChaoTi;
+    src: url("./fonts/WenYue-GuDianMingChaoTi-JRFC-2.otf") format("opentype");
 }
 
 .App-logo {

@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 // function App() {
 //   return (
@@ -19,7 +19,7 @@ import React from "react";
 //           Learn React
 //         </a>
 //       </header>
-//     </div>
+//     </div>  
 //   );
 // }
 // 
@@ -27,6 +27,19 @@ const App = () =>{
 
   const APP_KEY = "";
   const EXAMPLE_REQUEST = `http://api.tianapi.com/zhongyao/index?key=${APP_KEY}&word=金银花`;
+  const [counter, setCounter] = useState(0);
+
+  useEffect(async ()=>{
+    console.log("Effect has been run!");
+  }, []); 
+  /*  
+    Run everytime the page rerendered if there is the arrow function being the only parameter
+    a [] as the second parameter, will make it run once at the beginning when it is mounted.
+
+    [counter] will make it run everytime the counter is updated. - add this to return <button onClick={()=>{setCounter(counter+1)}} className="search_button" type = "submit">{counter}</button>
+  */
+
+
 
   return (
     <div className="App">
