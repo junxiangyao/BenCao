@@ -1,6 +1,51 @@
 .App {
   text-align: center;
   font-family: "WenYueMingChaoTi";
+  min-height: 100vh;
+  color: #43454a;
+}
+
+.heading {
+  background-color: white;
+  color: #45554a;
+}
+
+.heading h1 {
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 48px;
+}
+
+.search_form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: safe center;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.search_bar {
+  width: 50%;
+  height: 24px;
+  padding:  10px 32px;
+  border-color: #e1dbcd;
+  -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.search_button{
+  /*border: none;*/
+  padding: 10px 32px;
+  height:  24px;
+  background-color: #e1dbcd;
+  color: #45554a;
+  border-color: #e1dbcd;
+  font-size: 18px;
+  font-family: "WenYueMingChaoTi";
+  -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
 body {
@@ -12,37 +57,17 @@ body {
     src: url("./fonts/WenYue-GuDianMingChaoTi-JRFC-2.otf") format("opentype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.API{
+  padding-top: 60px;
+  max-width: 60%;
+  margin:  0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.API_detail{
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.API_resource{
+  text-align: center;
+  margin-bottom: 30px;
 }

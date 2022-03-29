@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from "react";
 import './App.css';
 import BencaoAPI from "./BenCaoAPI";
-import bencao from "./data/bencao.json"
 
-const App = () =>{
+const APIApp = () =>{
 
   const APP_KEY = "7c444e4d61527ec6697336c2c84191af";
   const [bencaoAPI,setBencaoAPI] = useState([]);
@@ -13,13 +12,7 @@ const App = () =>{
 
   useEffect(()=>{
     getBencaoAPI();
-    if(bencao.TCM[0].name==="解表药"){
-      console.log(bencao.TCM[0].name);
-    }else{
-      console.log("Something went wrong...");
-    }
   }, [query]); 
-
   /*  
     Run everytime the page rerendered if there is the arrow function being the only parameter
     a [] as the second parameter, will make it run once at the beginning when it is mounted.
@@ -49,9 +42,7 @@ const App = () =>{
 
   return (
     <div className="App">
-      <div className="heading">
-        <h1>本草考辨</h1>
-      </div>
+      <h1>本草笔记</h1>
         <form onSubmit={getSearch} className="search_form">
             <input className="search_bar" type = "text" value={search} onChange={updateSearch}/>
             <button className="search_button" type = "submit">检索</button>
@@ -63,4 +54,4 @@ const App = () =>{
   );
 }
 
-export default App;
+export default APIApp;
